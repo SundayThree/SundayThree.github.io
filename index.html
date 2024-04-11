@@ -1,1 +1,36 @@
-你好！
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .hello {
+            font-size: 50px;
+            color: #fff;
+            text-align: center;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #ff0, 0 0 20px #ff0, 0 0 30px #ff0, 0 0 40px #ff0;
+            }
+            to {
+                text-shadow: 0 0 20px #ff0, 0 0 30px #ff0, 0 0 40px #ff0, 0 0 50px #ff0, 0 0 60px #ff0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hello">你好</div>
+</body>
+</html>
